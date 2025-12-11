@@ -1,0 +1,59 @@
+# 🏆 Caiano Server
+
+![Python](https://img.shields.io/badge/Python-3.8%2B-ffd700?style=for-the-badge&logo=python&logoColor=black)
+![KivyMD](https://img.shields.io/badge/GUI-KivyMD-ffd700?style=for-the-badge&logo=kivy&logoColor=black)
+![Platform](https://img.shields.io/badge/Platform-Windows-grey?style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-ffd700?style=for-the-badge)
+
+> **Uma solução robusta de infraestrutura de rede local para orquestrar a transferência de dados entre ecossistemas heterogêneos.**
+
+O **Caiano Server** é uma aplicação desktop desenvolvida em Python que transforma seu computador em um Hub de Mídia centralizado. Com uma interface elegante em tons **Black & Gold**, ele permite compartilhar arquivos via FTP, Navegador Web e DLNA (para Smart TVs) simultaneamente, sem complicações.
+
+---
+
+## 📸 Screenshots
+
+| Painel Principal | Serviços & Configurações | Interface Web |
+|:---:|:---:|:---:|
+| ![Dashboard](https://via.placeholder.com/300x500/121212/FFD700?text=Dashboard+Print) | ![Services](https://via.placeholder.com/300x500/121212/FFD700?text=Services+Print) | ![Web Interface](https://via.placeholder.com/400x300/121212/FFD700?text=Web+Interface) |
+*(Substitua os links acima pelas imagens reais do seu software)*
+
+---
+
+## 🚀 Funcionalidades Principais
+
+### 📂 Servidor FTP (High Throughput)
+- Implementação otimizada do protocolo RFC-959.
+- Ideal para transferência em lote de arquivos grandes.
+- Compatível com clientes como FileZilla, WinSCP e exploradores de arquivos nativos.
+- **Porta Padrão:** 2121 (Configurável).
+
+### 🌐 Interface Web (HTTP)
+- Interface responsiva acessível via navegador de qualquer dispositivo (Android, iOS, PC).
+- Permite **Upload** e **Download** de arquivos sem instalar aplicativos extras.
+- Micro-framework Flask integrado.
+- **Porta Padrão:** 5000 (Configurável).
+
+### 📺 Servidor DLNA / UPnP
+- Streaming de mídia direto para Smart TVs e dispositivos compatíveis.
+- Descoberta automática via protocolo SSDP (Multicast UDP).
+- Indexação rápida de conteúdo audiovisual.
+
+### ⚙️ Recursos Extras
+- **Virtual File System:** Agrega múltiplas pastas de locais diferentes em uma única raiz virtual usando *Junction Points*.
+- **System Tray:** Minimiza para a bandeja do sistema para rodar em segundo plano.
+- **Auto-Start:** Opção para iniciar os serviços automaticamente ao abrir o app.
+- **Multi-idioma:** Suporte a PT, EN, ES, DE, CN, JP.
+
+---
+
+## 🛠️ Instalação e Execução
+
+### Pré-requisitos
+- Python 3.8 ou superior instalado.
+- Windows 10/11 (Recomendado para suporte completo a Junction Points).
+
+### 1. Clone o repositório
+```bash
+git clone [https://github.com/SEU-USUARIO/caiano-server.git](https://github.com/SEU-USUARIO/caiano-server.git)
+cd caiano-server
